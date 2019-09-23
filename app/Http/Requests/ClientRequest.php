@@ -33,6 +33,7 @@ class ClientRequest extends FormRequest
             'sex'               => 'required|in:m,f',
             'marital_status'    => "required|max:1|in:$marital_status",
             'company_name'      => 'max:255',
+            'image'             => 'required|image',
         ];
     }
 }

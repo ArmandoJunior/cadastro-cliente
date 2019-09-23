@@ -29,9 +29,19 @@
                 <i class="fas fa-home"></i>Inicio - listar</a>
             <a href="{{ route('clients.create') }}" class="list-group-item list-group-item-action">
                 <i class="fas fa-users"></i>Novo cliente</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-box-open"></i>...</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sitemap"></i>...</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-people-carry"></i>...</a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
+            <a href="#" class="list-group-item list-group-item-action"></a>
         </div>
     </div>
     <!-- CONTEÚDO -->
@@ -49,8 +59,8 @@
                 </form>
 
                 <div id="navbar-profile" class="ml-auto">
-                    <img src="https://www.gravatar.com/avatar/9ddf56fd9cabac44efabf3beebaff316.jpg?size=240&d=https%3A%2F%2Fwww.artstation.com%2Fassets%2Fdefault_avatar.jpg" alt="" srcset="">
-                    <span>Victor Lima</span>
+                    <img src="https://media.licdn.com/dms/image/C5603AQFsDohUoQ6Vzg/profile-displayphoto-shrink_100_100/0?e=1574899200&v=beta&t=9-eqMeyBSounstf2Eb7EUYWnVHV31Z9gx1J5PlvCkRA" alt="" srcset="">
+                    <span>Armando Junior</span>
                 </div>
             </div>
         </nav>

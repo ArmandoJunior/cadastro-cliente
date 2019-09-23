@@ -23,6 +23,7 @@ class CreateClientsTable extends Migration
             $table->char('sex')->nullable();
             $table->enum('marital_status', array_keys(Client::MARITAL_STATUS));
             $table->string('company_name')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

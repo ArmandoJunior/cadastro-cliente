@@ -58,8 +58,8 @@
     {{ Form::text('company_name',null,['class' => 'form-control form-field son-form-field']) }}
 @endcomponent
 
-{{--@component('form._form_group',['field' => 'file_name'])--}}
-{{--    {{ Form::label('file_name','Imagem',['class' => 'control-label']) }}--}}
-{{--    {{ Form::file('file_name',['class' => 'form-control']) }}--}}
-{{--@endcomponent--}}
+@component('form._form_group',['field' => 'file_name'])
+    {{ Form::label('image','Imagem',['class' => 'control-label']) }}
+    {{ Form::file('image',['class' => 'form-control form-field son-form-field']) }}
+@endcomponent
 

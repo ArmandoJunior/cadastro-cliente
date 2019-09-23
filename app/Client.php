@@ -20,6 +20,7 @@ class Client extends Model
         'sex',
         'marital_status',
         'company_name',
+        'image',
     ];
 
     public function getSexFormattedAttribute()

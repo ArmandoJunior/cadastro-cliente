@@ -1,19 +1,35 @@
 @extends('layouts.layout')
 
 @section('content')
-    <h3>Ver cliente</h3>
-    <a class="btn btn-primary" href="{{ route('clients.edit',['client' => $client->id]) }}">Editar</a>
-    <a class="btn btn-danger" href="{{ route('clients.destroy',['client' => $client->id]) }}"
-       onclick="event.preventDefault();if(confirm('Deseja excluir este cliente?')){document.getElementById('form-delete').submit();}">Excluir</a>
-    <!--<form id="form-delete"style="display: none" action="{{ route('clients.destroy',['client' => $client->id]) }}" method="post">-->
+    <h3 class="son-main-text-3">Cliente</h3>
+    <div class="card-footer create-btn">
+        <a class="btn btn-secondary create-btn" href="{{ route('clients.edit',['client' => $client->id]) }}">Editar</a>
+        <a class="btn btn-danger" href="{{ route('clients.destroy',['client' => $client->id]) }}"
+           onclick="event.preventDefault();if(confirm('Deseja excluir este cliente?')){document.getElementById('form-delete').submit();}">Excluir</a>
+    </div>
+
+
     {{Form::open(['route' => ['clients.destroy',$client->id],'method' => 'DELETE', 'id' => 'form-delete'])}}
     {{Form::close()}}
-    <br/><br/>
-    <table class="table table-bordered">
+
+    <table class="table  bg-white">
         <tbody>
         <tr>
             <th scope="row">ID</th>
-            <td>{{$client->id}}</td>
+            <td>{{$client->id}} </td>
+        </tr>
+        <tr>
+            <th scope="row">Imagem</th>
+            <td>
+                @if(!empty($client->image))
+                <div id="navbar-profile-show" class="ml-auto">
+                    <img src="{{ url("storage/clients/{$client->image}") }}" alt="{{ $client->name }}">
+{{--                    <span>{{$client->name}}</span>--}}
+                </div>
+                @else
+                sem imagem
+                @endif
+            </td>
         </tr>
         <tr>
             <th scope="row">Nome</th>
@@ -51,7 +67,7 @@
         </tr>
         <tr>
             <th scope="row">Sexo</th>
-            <td>{{$client->sex}}{{$client->sex_formatted }}</td>
+            <td>{{$client->sex_formatted }}</td>
         </tr>
         </tbody>
     </table>

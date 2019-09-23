@@ -9,6 +9,7 @@
     {{ Form::open([
     'route' => 'clients.store',
     'class' => 'card son-form',
+    'files' => true
     ]) }}
 
     <div class="card-body son-form-body">
@@ -18,7 +19,6 @@
     <div class="card-footer create-btn">
         <button type="submit" class="btn btn-default">Criar</button>
     </div>
-    <br>
     {{ Form::close() }}
     <br><br>
 @endsection
