@@ -54,9 +54,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="son-navbar-collapse">
-                <form class="form-inline" id="navbar-search-form">
-                    <input type="text" class="form-control form-field son-form-field" placeholder="Pesquisar" id="navbar-search-field">
-                </form>
+{{--                <form class="form-inline" id="navbar-search-form">--}}
+{{--                    <input type="text" class="form-control form-field son-form-field" placeholder="Pesquisar" id="navbar-search-field">--}}
+{{--                </form>--}}
 
                 <div id="navbar-profile" class="ml-auto">
                     <img src="https://media.licdn.com/dms/image/C5603AQFsDohUoQ6Vzg/profile-displayphoto-shrink_100_100/0?e=1574899200&v=beta&t=9-eqMeyBSounstf2Eb7EUYWnVHV31Z9gx1J5PlvCkRA" alt="" srcset="">
