@@ -1,6 +1,3 @@
-# cadastro-cliente
-crud com upload de imagem
-
 <h4>Cadastro de Clientes - teste para Desenvolvedor Fullstack (Essentia)</h4> 
 
   
