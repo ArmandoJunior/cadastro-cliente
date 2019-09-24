@@ -60,7 +60,7 @@
 
                 <div id="navbar-profile" class="ml-auto">
                     <img src="https://media.licdn.com/dms/image/C5603AQFsDohUoQ6Vzg/profile-displayphoto-shrink_100_100/0?e=1574899200&v=beta&t=9-eqMeyBSounstf2Eb7EUYWnVHV31Z9gx1J5PlvCkRA" alt="" srcset="">
-                    <span>Armando Junior</span>
+                    <span>Dev - Armando Junior</span>
                 </div>
             </div>
         </nav>
