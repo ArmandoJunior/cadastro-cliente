@@ -182,6 +182,27 @@ body{
     border-radius: 9px;
     box-shadow: 0px 0px 6px rgba(164, 164, 164, 0.3);
 }
+.custom-file-label {
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px rgba(164, 164, 164, 0.3);
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    content: "Selecione sua foto aqui";
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #78797d;
+}
+
+.custom-file-label {
+    content: "Select file...";
+}
+
+#customFile .custom-file-control:lang(en)::before {
+    content: "Click me";
+}
 
 .form-group label{
     font-size: 17px;
@@ -235,6 +256,10 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: #78797d;
+}
+
+.form-control-file button {
+    background-color: #2b74bfff;
 }
 
 .table-title input {

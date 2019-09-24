@@ -3,7 +3,9 @@
 @section('content')
     <div class="table-title">
         <h3 id="main-page-form-title" class="son-main-text-3">Listagem de clientes</h3>
-        <input type="text" class="form-control form-field son-form-field" placeholder="Pesquisar">
+        <form action="{{route('clients.index')}}" type="GET">
+            <input type="text" name="name" class="form-control form-field son-form-field" placeholder="Pesquisar">
+        </form>
     </div>
     <table class="table bg-white">
         <thead>

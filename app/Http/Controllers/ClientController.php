@@ -15,7 +15,9 @@ class ClientController extends Controller
      */
     public function index(Request $request)
     {
-        $clients = Client::query()->paginate(10);
+        $name = $request->name;
+
+        $clients = Client::query()->where('name', 'like', "%$name%")->paginate(10);
 
         return view('clients.index', compact('clients', 'request'));
     }
@@ -38,7 +40,6 @@ class ClientController extends Controller
      */
     public function store(ClientRequest $request)
     {
-        dd($request);
         $data = $request->only(array_keys($request->rules()));
         Client::create($data);
 

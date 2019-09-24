@@ -58,8 +58,12 @@
     {{ Form::text('company_name',null,['class' => 'form-control form-field son-form-field']) }}
 @endcomponent
 
-@component('form._form_group',['field' => 'file_name'])
-    {{ Form::label('image','Imagem',['class' => 'control-label']) }}
-    {{ Form::file('image',['class' => 'form-control form-field son-form-field']) }}
+@component('form._form_group',['field' => ''])
+{{ Form::label('imagem','Imagem',['class' => 'control-label ']) }}
+<div class="custom-file" id="customFile" lang="pt-BR">
+    {{ Form::file('image',['class' => 'custom-file-input form-field son-form-field', 'id' => 'inputFile']) }}
+    <label class="custom-file-label" for="inputFile"> clique aqui </label>
+</div>
+
 @endcomponent
 

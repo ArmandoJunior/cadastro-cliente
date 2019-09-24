@@ -23,7 +23,7 @@
             <td>
                 @if(!empty($client->image))
                 <div id="navbar-profile-show" class="ml-auto">
-                    <img src="{{ url("storage/clients/{$client->image}") }}" alt="{{ $client->name }}">
+                    <img class="rounded float-left" src="{{ url("storage/clients/{$client->image}") }}" alt="{{ $client->name }}">
 {{--                    <span>{{$client->name}}</span>--}}
                 </div>
                 @else
